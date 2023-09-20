@@ -10,28 +10,53 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet"href="portfolio1.css">
-    <script src="portfolio1.js"></script>
+    
 </head>
 <body>
+    <div id="preloader"></div>
     <!-- navbar design -->
-    <nav class="navbar">
-        <span>Portfolio</span>
-        <ul>
-            <li><a href="#home"style="--i:1;">Home</a></li>
-            <li><a href="#about"style="--i:2;">About</a></li>
-            <li><a href="#services"style="--i:3;">Services</a></li>
-            <li><a href="#portfolio"style="--i:4;">Portfolio</a></li>
-            <li><a href="#contact"style="--i:5;">Contact</a></li>
+    <div class="container-fluid">
+        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-5 py-3">
+          <a class="navbar-brand p-5" href="#"><span>Portfolio</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 uldiv">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              </li>
             </ul>
-    </nav>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+
     <!-- home section -->
     <section class="home-section" id = "home">
     <div class="left-setion">
         <h3>Hello,It's Me</h3>
         <h1>Rajeev</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
-        <p>Frontend Developer with Knowledge in web development and design.I offer the best projects resulting in quality work.</p>
+        <h3 class="container-text">And I'm a <span class="multi-text">Frontend Developer</span></h3>
+        <p>Frontend Developer.I Create web pages with UI/UX user interface.I am creative Frontend designer, and I'm very passionate and dedicated to my work.</p>
         <div class="social-media">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -41,82 +66,156 @@
             <a href="#" class="btn">Download CV</a>
     </div>
     <div class="home-img">
+
         <div class="imagebg">
-        <img src="../images/raj4.png"alt="img">
+        <img src="https://storage.prompt-hunt.workers.dev/cleznzs100001ky08xe2udhaa_1"alt="img"class="img-fluid">
     </div>
     </div>
 </section>
 <!-- about section design -->
-<section class="about"id="about">
-    <div class="aboutimg ps-5">
-        <img src="../images/raj4.png"alt="img">
+<div class="container-fluid my-4 py-3"id = "about">
+    <div class="container">
+        <div class="row pt-3 px-5 mt-5 aboutrow justify-content-center">
+            <div class="col-6 aboutimg mt-5 ms-5">
+        <img src="https://storage.prompt-hunt.workers.dev/cleznzs100001ky08xe2udhaa_1"alt="img"class="img-fluid ms-5 mt-5 imag2">
     </div>
-    <div class="about-content">
+    <div class="col-6  ms-5 ps-4 mt-5">
+    <div class="about-content ps-5">
         <h2 class="heading">About<span id="span2">Me</span></h2>
         <h3>Frontend Developer</h3>
         <p>Frontend Developer with Knowledge in web development and design.I offer the best projects resulting in quality work</p>
-        <a href="#"class="btn">Read More</a>
+        <a href="#"class="btn ">Read More</a>
+    </div></div>
+</div>
+</div>
+</div>
+<!-- services section -->
+<section class="services py-5 px-5"id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container px-5">
+        <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Web Designing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-brands fa-envira"></i>
+            <h3>Responsiv Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
     </div>
-    </section>
-    <!-- service section design -->
-    <section class="skills"id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+</section>
+<!-- portfolio section -->
+<section class="portfolio py-5"id="portfolio">
+    <h2 class="heading pt-5">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://media.istockphoto.com/id/1335717953/photo/project-manager-working-on-computer-at-the-office-concept-with-icons-of-management-areas-such.jpg?s=612x612&w=0&k=20&c=HKKel0F9p7u9JL54sDOtYOuR1yVv81LA2ISHmuU7mdM="/></h4>
+            <div class="portfolio-layer">  
+                <h4>Web Design</h4>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://cdn.xxl.thumbs.canstockphoto.com/businessman-hand-working-with-modern-laptop-computer-in-modern-office-with-virtual-icon-diagram-pictures_csp48854183.jpg"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://149501111.v2.pressablecdn.com/wp-content/uploads/2022/09/Computer-Science-Project-Ideas-for-Final-Year.webp"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://t4.ftcdn.net/jpg/02/86/21/07/360_F_286210727_1OGvElGnHeQAIKplx4gEWzyaQzzfOfpG.jpg"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                        <div class="progress">
-                            <h3>CSS/Bootstrap <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>JAVASCRIPT/React <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Wordpress <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+    <!-- skills section design -->
+    <div class="container-fluid my-5 py-5" id="services">
+        <div class="container my-5 py-4">
+            <div class="row">
+                <div class="col-12"><h1 class="text-center">My <span>Skills</span></h1></div>
+            </div>
+            <div class="row py-3">
+                <div class="col-6">
+                    <div class="skill">
+                        <h1>my skill</h1>
+                        <li><h3>HTML</h3>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+                    <li><h3>CSS/BOOTSTRAP</h3>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li><h3>JAVASCRIPT/REACT.JS</h3>
+                        <span class="bar"><span class="bootstrap"></span></span>
+                    </li>
+                    <li><h3>JQUERY</h3>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
                     </div>
-
+                </div>
+                <div class="col-6">
+                    <div class="skill">
+                        <h1>PROFESSIONAL SKILLS</h1>
+                        <li><h3>WEB DESIGN</h3>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+                    <li><h3>WEB DEVELOPMENT</h3>
+                        <span class="bar"><span class="web-development"></span></span>
+                    </li>
+                    <li><h3>ViDEO EDITING</h3>
+                        <span class="bar"><span class="video-editing"></span></span>
+                    </li>
+                    <li><h3>PHOTO EDITING</h3>
+                        <span class="bar"><span class="photo-editing"></span></span>
+                    </li>
+                    </div>
                 </div>
             </div>
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Web development <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Photoshop <span>50%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Video Editing <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
         </div>
-
-    </section>
+    </div>
+    
+    
     <!-- contact section -->
-    <section class="contact"id="contact">
+    <section class="contact py-5 px-5"id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="https://formspree.io/f/xgejyjnp"
         method="POST">
@@ -149,5 +248,19 @@
         </form>
 
     </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Rajeev | All Right Reserved.</p>
+        </div>
+        <div class="Footer-iconTop">
+            <a href = "#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <script>
+        let loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+    loader.style.display = 'none';
+});
+    </script>
 </body>
 </html>
