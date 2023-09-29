@@ -662,6 +662,9 @@ span{
     }
     
     @media(max-width:592px){
+        .navbar span{
+            padding-left: 0px;
+        }
         .imagebg{
             margin-bottom: 2rem;}
     }
